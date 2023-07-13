@@ -41,6 +41,7 @@ public class Basics {
 				"\"key\":\"qaclick123\"\r\n" + 
 				"}").
 		when().put("maps/api/place/update/json")
+		System.out.println("Testcase completion from asia time zone");
 		.then().assertThat().log().all().statusCode(200).body("msg", equalTo("Address successfully updated"));
 		
 		//Get Place
